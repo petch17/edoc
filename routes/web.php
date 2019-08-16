@@ -1,7 +1,7 @@
 <?php
 
 Route::resource('inbox','InboxController');
-Route::resource('form','FormController');
+Route::resource('from','FromController');
 Route::resource('send','SendController');
 
 Route::get('/', function () {
