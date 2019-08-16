@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SendController extends Controller
+class FormController extends Controller
 {
     public function index()
     {
-        return view('send');
+        return view('form');
     }
 }

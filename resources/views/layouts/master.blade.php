@@ -64,17 +64,17 @@
     <div class="app-body">
       <div class="sidebar">
         <nav>
-          <a class="btn btn-danger btn-block" href="./from">New Email</a>
+          <a class="btn btn-danger btn-block" href="{{ route('form.index') }}">New Email</a>
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="{{ route('inbox.index') }}">
                 <i class="fa fa-inbox"></i> Inbox
                 <span class="badge badge-danger">4</span>
               </a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="apps/email/inbox.html">
+              <a class="nav-link" href="{{ route('sent.index') }}">
                 <i class="fa fa-rocket"></i> Sent</a> 
             </li>
             

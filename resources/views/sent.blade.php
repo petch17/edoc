@@ -16,7 +16,7 @@
               
 
                  
-                    <button class="btn btn-info btn-ladda" data-style="slide-left"> <a href="{{ route('from.index') }}">เพิ่ม</a></button>
+                    <button class="btn btn-info btn-ladda" data-style="slide-left"> <a href="{{ route('form.index') }}">เพิ่ม</a></button>
                    
 
                     <td> <i class="fa fa-circle text-danger"></i> ด่วนมาก</th>

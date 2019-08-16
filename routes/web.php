@@ -1,8 +1,8 @@
 <?php
 
 Route::resource('inbox','InboxController');
-Route::resource('from','FromController');
-Route::resource('send','SendController');
+Route::resource('form','FormController');
+Route::resource('sent','SentController');
 
 Route::get('/', function () {
     return view('auth.login');
