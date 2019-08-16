@@ -27,9 +27,9 @@
     <!-- Main styles for this application-->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('vendors/pace-progress/css/pace.min.css')}}" rel="stylesheet">
-
+    @yield('css')
     <!-- ckeditor -->
-    <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+    <!-- <script src="{{asset('ckeditor/ckeditor.js')}}"></script> -->
         <!-- <script src="//cdn.ckeditor.com/4.12.1/full/ckeditor.js"></script> -->
         
   </head>
@@ -143,8 +143,9 @@
     <script src="{{asset('node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('node_modules/@coreui/coreui-pro/dist/js/coreui.min.js')}}"></script>
     <!-- Plugins and scripts required by this view-->
-    <script src="{{asset('node_modules/chart.js/dist/Chart.min.js')}}"></script>
+    <!-- <script src="{{asset('node_modules/chart.js/dist/Chart.min.js')}}"></script>
     <script src="{{asset('node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')}}"></script>
-    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script> -->
+    @yield('js')
   </body>
 </html>

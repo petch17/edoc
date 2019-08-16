@@ -1,13 +1,21 @@
 @extends('layouts.master')
 
+
+@section('css')
+   <!-- Main styles for this application-->
+   <link href="css/style.css" rel="stylesheet">
+    <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <link href="node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+@endsection
+
 @section('content')
         <div class="container-fluid">
           <div class="animated fadeIn">
             <div class="card">
               <div class="card-header">
-              <div class="col-md-3 py-4">
+              
 
-                   <th>
+                 
                     <button class="btn btn-info btn-ladda" data-style="slide-left"> <a href="{{ route('from.index') }}">เพิ่ม</a></button>
                    
 
@@ -16,11 +24,9 @@
                     <td>ด่วน</th>
                     <td>ปกติ</th>
                     <td>ลับ</th>
-                    <td>ปกติ</th>
-                    <td>ลับ</th>
+                    
 
-                 </th>
-              </div>
+              
               <div class="card-body">
                 <table class="table table-striped table-bordered datatable">
                   <thead>
@@ -165,4 +171,12 @@
           </div>
         </div>
       </main>
+      @endsection
+
+      @section('js')
+
+    <!-- Plugins and scripts required by this view-->
+    <script src="node_modules/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="js/datatables.js"></script>
       @endsection

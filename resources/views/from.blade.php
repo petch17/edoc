@@ -7,7 +7,8 @@
               <div class="col-md-12">
                 <div class="card">
                   <div class="card-header">
-                    <strong>Basic Form</strong> Elements</div>
+                    <strong>ตั้งแท่นเอกสาร</strong> 
+                  </div>
                   <div class="card-body">
                     <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
                       <div class="form-group row">
@@ -17,8 +18,13 @@
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
-                        <div class="col-md-9">
+                        <label class="col-md-3 col-form-label" for="text-input">เลขที่หนังสือ</label>
+                        <div class="col-md-3">
+                          <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
+                          <span class="help-block">This is a help text</span>
+                        </div>
+                        <label class="col-md-3 col-form-label" for="text-input">ประเภทเอกสาร</label>
+                        <div class="col-md-3">
                           <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
                           <span class="help-block">This is a help text</span>
                         </div>
@@ -255,4 +261,9 @@
     </form>
     </div>
 </div>
+
+@endsection
+
+@section('js')
+<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 @endsection
