@@ -10,7 +10,6 @@
   <div class="card-block">
     <div class="row">
       <div class="col-md-12">
-        <div class="card">
           <div class="card-header">
             <strong>ตั้งแท่นเอกสาร</strong> 
           </div>
@@ -18,7 +17,7 @@
             <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="date-input">เลขที่รับส่วนงาน</label>
-                  <div class="col-md-3">
+                  <div class="col-md-10">
                     <input class="form-control" id="text-input" type="text" name="text-input" placeholder="กรอกเลขที่รับส่วนงาน">
                       <span class="help-block">โปรดใส่ข้อมูล</span>
                   </div>
@@ -26,7 +25,7 @@
 
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="text-input">เลขที่หนังสือ</label>
-                  <div class="col-md-3">
+                  <div class="col-md-10">
                     <input class="form-control" id="text-input" type="text" name="text-input" placeholder="กรอกเลขที่หนังสือ">
                       <span class="help-block">โปรดใส่ข้อมูล</span>
                   </div>
@@ -34,14 +33,14 @@
 
               <div class="form-group row">
                   <label class="col-md-2 col-form-label" for="text-input">ประเภทเอกสาร</label>
-                    <div class="col-md-3">
+                    <div class="col-md-10">
                       <input class="form-control" id="text-input" type="text" name="text-input" placeholder="กรอกประเภทเอกสาร">
                         <span class="help-block">โปรดใส่ข้อมูล</span>
                     </div>
               </div>
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="date-input">วันที่</label>
-                  <div class="col-md-3">
+                  <div class="col-md-10">
                     <input class="form-control" id="date-input" type="date" name="date-input" placeholder="กรอกวันที่">
                       <span class="help-block">โปรดใส่ข้อมูล</span>
                   </div>
@@ -49,7 +48,7 @@
 
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="textarea-input">รายละเอียด</label>
-                  <div class="col-md-9">
+                  <div class="col-md-10">
                     <textarea name="editor1" rows="10" cols="50"></textarea>
                       <span class="help-block">โปรดใส่ข้อมูล</span>           
                   </div>
@@ -93,7 +92,7 @@
 
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="file-input">File input</label>
-                  <div class="col-md-3">
+                  <div class="col-md-10">
                     <input id="file-input" type="file" name="file-input">
                       <span class="help-block" color="red">เอกสารต้องเป็นไฟล์ PDF แนวตั้งเท่านั้น</span>
                   </div>
@@ -101,7 +100,7 @@
 
               <div class="form-group row">
                 <label class="col-md-2 col-form-label">เลือกตำแหน่งตราประทับ</label>
-                  <div class="col-md-3 col-form-label">
+                  <div class="col-md-10 col-form-label">
                     <div class="form-check form-check-inline mr-1">
                       <input class="form-check-input" id="inline-checkbox1" type="checkbox" value="check1">
                         <label class="form-check-label" for="inline-checkbox1">มุมซ้าย</label>
@@ -119,17 +118,17 @@
 
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="textarea-input">เกษียนหนังสือ</label>
-                <div class="col-md-6">
+                <div class="col-md-10">
                   <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9" placeholder="เรียน"></textarea>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="date-input">ตำแหน่ง</label>
-                  <div class="col-md-3">
+                  <div class="col-md-10">
                     <input class="form-control" id="text-input" type="text" name="text-input" placeholder="กรอกตำแหน่ง">
                   </div>
               </div>
-              
+
               <div class="form-group row">
                 <label class="col-md-2 col-form-label">ชั้นความเร็ว</label>
                   <div class="col-md-6 col-form-label">
