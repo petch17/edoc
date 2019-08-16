@@ -1,6 +1,11 @@
 @extends('layouts.master')
 
+@section('css')
+  <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+@endsection
+
 @section('content')
+
 <div class="card">
     <div class="card-block">
     <div class="row">
@@ -58,7 +63,7 @@
                       </div>
                       <div class="form-group row">
                         <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
-                        <form action="#" method="POST">
+                        
                         <div class="col-md-9">
                             <textarea name="editor1" rows="10" cols="50"></textarea>            
                         </div>
@@ -262,8 +267,4 @@
     </div>
 </div>
 
-@endsection
-
-@section('js')
-<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 @endsection

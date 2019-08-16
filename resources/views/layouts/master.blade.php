@@ -28,9 +28,6 @@
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('vendors/pace-progress/css/pace.min.css')}}" rel="stylesheet">
     @yield('css')
-    <!-- ckeditor -->
-    <!-- <script src="{{asset('ckeditor/ckeditor.js')}}"></script> -->
-        <!-- <script src="//cdn.ckeditor.com/4.12.1/full/ckeditor.js"></script> -->
         
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
@@ -70,7 +67,7 @@
           <ul class="nav">
             <li class="nav-title">รายการ</li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('from.index') }}">
+              <a class="nav-link" href="{{ route('form.index') }}">
                 <i class="nav-icon icon-pencil"></i>สร้างเอกสาร</a>
             </li>
             <li class="nav-item nav-dropdown">
@@ -92,7 +89,7 @@
             <li class="nav-title">Labels</li>
             <li class="nav-item d-compact-none d-minimized-none">
               <a class="nav-label" href="#">
-                <i class="fa fa-circle text-danger"></i> Label danger</a>
+                <i class="fa fa-circle" style="color:blue;"></i> Label danger</a>
             </li>
             <li class="nav-item d-compact-none d-minimized-none">
               <a class="nav-label" href="#">
@@ -141,10 +138,6 @@
     <script src="{{asset('node_modules/pace-progress/pace.min.js')}}"></script>
     <script src="{{asset('node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js')}}"></script>
     <script src="{{asset('node_modules/@coreui/coreui-pro/dist/js/coreui.min.js')}}"></script>
-    <!-- Plugins and scripts required by this view-->
-    <!-- <script src="{{asset('node_modules/chart.js/dist/Chart.min.js')}}"></script>
-    <script src="{{asset('node_modules/@coreui/coreui-plugin-chartjs-custom-tooltips/dist/js/custom-tooltips.min.js')}}"></script>
-    <script src="{{asset('js/main.js')}}"></script> -->
     @yield('js')
   </body>
 </html>
