@@ -734,7 +734,12 @@
 
                    <th> 
                     <button class="btn btn-info btn-ladda" data-style="slide-left">เพิ่ม</button>
-                 
+                    <td> <i class="fa fa-circle text-danger"></i> ด่วนมาก</th>
+                    <td>ด่วนมาก</th>
+                    <td>ด่วน</th>
+                    <td>ปกติ</th>
+                    <td>ลับ</th>
+
                  </th>
               </div>
               <div class="card-body">
