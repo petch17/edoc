@@ -7,8 +7,10 @@
               <div class="card-header">
               <div class="col-md-3 py-4">
 
-                   <th> 
-                    <button class="btn btn-info btn-ladda" data-style="slide-left">เพิ่ม</button>
+                   <th>
+                    <button class="btn btn-info btn-ladda" data-style="slide-left"> <a href="{{ route('from.index') }}">เพิ่ม</a></button>
+                   
+
                     <td> <i class="fa fa-circle text-danger"></i> ด่วนมาก</th>
                     <td>ด่วนมาก</th>
                     <td>ด่วน</th>
