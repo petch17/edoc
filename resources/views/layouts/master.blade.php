@@ -75,7 +75,7 @@
                 <i class="nav-icon icon-list"></i>กล่องเอกสาร</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
-                  <a class="nav-link" href="buttons/buttons.html">
+                  <a class="nav-link" href="{{ route('inbox.index') }}">
                     <i class="nav-icon icon-note"></i>เอกสารรอดำเนินการ</a>
                 </li>
                 <li class="nav-item">
@@ -83,21 +83,6 @@
                     <i class="nav-icon icon-note"></i>เอกสารที่เซ็นแล้ว </a>
                 </li>
               </ul>
-            </li>
-            
-            <li class="nav-divider"></li>
-            <li class="nav-title">Labels</li>
-            <li class="nav-item d-compact-none d-minimized-none">
-              <a class="nav-label" href="#">
-                <i class="fa fa-circle" style="color:blue;"></i> Label danger</a>
-            </li>
-            <li class="nav-item d-compact-none d-minimized-none">
-              <a class="nav-label" href="#">
-                <i class="fa fa-circle text-info"></i> Label info</a>
-            </li>
-            <li class="nav-item d-compact-none d-minimized-none">
-              <a class="nav-label" href="#">
-                <i class="fa fa-circle text-warning"></i> Label warning</a>
             </li>
           </ul>
         </nav>
