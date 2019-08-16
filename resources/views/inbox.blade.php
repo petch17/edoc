@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 <!DOCTYPE html>
 <!--
@@ -1198,12 +1197,3 @@
     <script src="js/datatables.js"></script>
   </body>
 </html>
-=======
-@extends('layouts.master')
-
-@section('content')
-
-    
-
-@endsection
->>>>>>> 6d101d450ed0dc0de42aebe0af4c8f5b78075112
