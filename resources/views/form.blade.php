@@ -19,36 +19,39 @@
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="date-input">เลขที่รับส่วนงาน</label>
                   <div class="col-md-3">
-                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
-                      <span class="help-block">This is a help text</span>
+                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="กรอกเลขที่รับส่วนงาน">
+                      <span class="help-block">โปรดใส่ข้อมูล</span>
                   </div>
               </div>
 
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="text-input">เลขที่หนังสือ</label>
                   <div class="col-md-3">
-                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
-                      <span class="help-block">This is a help text</span>
-                  </div>
-                    <label class="col-md-2 col-form-label" for="text-input">ประเภทเอกสาร</label>
-                      <div class="col-md-3">
-                        <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
-                          <span class="help-block">This is a help text</span>
-                      </div>
-                  </div>
-
-              <div class="form-group row">
-                <label class="col-md-2 col-form-label" for="date-input">Date Input</label>
-                  <div class="col-md-3">
-                    <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
-                      <span class="help-block">Please enter a valid date</span>
+                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="กรอกเลขที่หนังสือ">
+                      <span class="help-block">โปรดใส่ข้อมูล</span>
                   </div>
               </div>
 
               <div class="form-group row">
-                <label class="col-md-2 col-form-label" for="textarea-input">Textarea</label>
+                  <label class="col-md-2 col-form-label" for="text-input">ประเภทเอกสาร</label>
+                    <div class="col-md-3">
+                      <input class="form-control" id="text-input" type="text" name="text-input" placeholder="กรอกประเภทเอกสาร">
+                        <span class="help-block">โปรดใส่ข้อมูล</span>
+                    </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="date-input">วันที่</label>
+                  <div class="col-md-3">
+                    <input class="form-control" id="date-input" type="date" name="date-input" placeholder="กรอกวันที่">
+                      <span class="help-block">โปรดใส่ข้อมูล</span>
+                  </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="textarea-input">รายละเอียด</label>
                   <div class="col-md-9">
-                    <textarea name="editor1" rows="10" cols="50"></textarea>            
+                    <textarea name="editor1" rows="10" cols="50"></textarea>
+                      <span class="help-block">โปรดใส่ข้อมูล</span>           
                   </div>
                   <script type="text/javascript">
 
@@ -85,7 +88,7 @@
                     ]
                     }
                   );
-                </script> <br>
+                </script>
               </div>
 
               <div class="form-group row">
@@ -95,27 +98,6 @@
                       <span class="help-block" color="red">เอกสารต้องเป็นไฟล์ PDF แนวตั้งเท่านั้น</span>
                   </div>
               </div>
-
-
-              {{-- <div class="form-group row">
-              <label class="col-md-2 col-form-label">Inline Radios</label>
-              <div class="col-md-3 col-form-label">
-              <div class="form-check form-check-inline mr-1">
-              <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
-              <label class="form-check-label" for="inline-radio1">One</label>
-              </div>
-              <div class="form-check form-check-inline mr-1">
-              <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
-              <label class="form-check-label" for="inline-radio2">Two</label>
-              </div>
-              <div class="form-check form-check-inline mr-1">
-              <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
-              <label class="form-check-label" for="inline-radio3">Three</label>
-              </div>
-              </div>
-              </div> --}}
-
-
 
               <div class="form-group row">
                 <label class="col-md-2 col-form-label">เลือกตำแหน่งตราประทับ</label>
@@ -144,30 +126,13 @@
               <div class="form-group row">
                 <label class="col-md-2 col-form-label" for="date-input">ตำแหน่ง</label>
                   <div class="col-md-3">
-                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
+                    <input class="form-control" id="text-input" type="text" name="text-input" placeholder="กรอกตำแหน่ง">
                   </div>
               </div>
-              <div class="form-group row">
-                <label class="col-md-2 col-form-label"></label>
-                  <div class="col-md-3 col-form-label">
-                    <div class="form-check form-check-inline mr-1">
-                      <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
-                        <label class="form-check-label" for="inline-radio1">One</label>
-                    </div>
-                    <div class="form-check form-check-inline mr-1">
-                      <input class="form-check-input" id="inline-radio2" type="radio" value="option2" name="inline-radios">
-                        <label class="form-check-label" for="inline-radio2">Two</label>
-                    </div>
-                    <div class="form-check form-check-inline mr-1">
-                      <input class="form-check-input" id="inline-radio3" type="radio" value="option3" name="inline-radios">
-                        <label class="form-check-label" for="inline-radio3">Three</label>
-                    </div>
-                  </div>
-              </div>  
-
+              
               <div class="form-group row">
                 <label class="col-md-2 col-form-label">ชั้นความเร็ว</label>
-                  <div class="col-md-3 col-form-label">
+                  <div class="col-md-6 col-form-label">
                     <div class="form-check form-check-inline mr-1">
                       <input class="form-check-input" id="inline-radio1" type="radio" value="option1" name="inline-radios">
                         <label class="form-check-label" for="inline-radio1">ปกติ</label>
@@ -185,15 +150,14 @@
                         <label class="form-check-label" for="inline-radio4"> ด่วนมากที่สุด </label>
                     </div>
                   </div>
-              </div>  
-
-            </form>
-            <div class="card-footer">
-              <input type="submit" class="btn btn-primary" name="submit" value="ยืนยัน"> 
-              <input type="reset" class="btn btn-danger" name="reset" value="ยกเลิก"> 
-              {{-- <button class="btn btn-sm btn-primary" type="submit">ส่ง</button>
-              <button class="btn btn-sm btn-danger" type="reset"> ยกเลิก</button> --}}
-            </div>
+              </div>
+              <div class="card-footer" align="center">
+                <input type="submit" class="btn btn-primary" name="submit" value="ยืนยัน"> 
+                <input type="reset" class="btn btn-danger" name="reset" value="ยกเลิก"> 
+                {{-- <button class="btn btn-sm btn-primary" type="submit">ส่ง</button>
+                <button class="btn btn-sm btn-danger" type="reset"> ยกเลิก</button> --}}
+              </div>
+          </form>
         </div>
       </div>
     </div>

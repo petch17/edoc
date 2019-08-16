@@ -11,19 +11,6 @@
 <div class="container-fluid">
   <div class="animated fadeIn">
     <div class="card">
-      <div class="card-header">
-        <form action="{{ route('form.index') }}">
-          @csrf
-          <button>
-              <img src="{{ asset('img\signe.png') }}" width="15px" height="20px" >
-          </button>
-        </form>
-          <a> <i class="fa fa-circle" style="color:red"></i> ด่วนมาก</a> &nbsp;
-          <a> <i class="fa fa-circle" style="color:orange"></i> ด่วนมาก</a> &nbsp;
-          <a> <i class="fa fa-circle" style="color:yellow"></i> ด่วน</a> &nbsp;
-          <a> <i class="fa fa-circle" style="color:green"></i> ปกติ</a> &nbsp;
-          <a> <i class="fa fa-circle" style="color:black"></i> ลับ</a>
-      </div>
       <div class="card-body">
         <table class="table table-striped table-bordered datatable">
           <thead>
@@ -45,8 +32,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-success">Active</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
             </tr>
             <tr>
@@ -56,8 +43,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-success">Active</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
             </tr>
             <tr>
@@ -67,8 +54,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-danger">Banned</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
             </tr>
             <tr>
@@ -78,8 +65,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-warning">Pending</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
             </tr>
             <tr>
@@ -89,8 +76,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-dark">Inactive</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
             </tr>
             <tr>
@@ -100,8 +87,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-dark">Inactive</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
               
             </tr>
@@ -112,8 +99,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-warning">Pending</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
             </tr>
             <tr>
@@ -123,8 +110,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-dark">Inactive</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
             </tr>
             <tr>
@@ -134,8 +121,8 @@
               <td>2012/01/01</td>
               <td>time</td>
               <td>ลดโลกร้อน</td>
-              <td>
-                <span class="badge badge-danger">Banned</span>
+              <td align="center">
+                <img src="{{ asset('img\msg_success.png') }}">
               </td>
             </tr>
           </tbody>
