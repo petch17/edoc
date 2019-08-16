@@ -189,8 +189,8 @@
 
             </form>
             <div class="card-footer">
-              <input type="submit" class="btn btn-primary" name="submit" value="ยืนยัน">
-              <input type="reset" class="btn btn-danger" name="reset" value="ยกเลิก">
+              <input type="submit" class="btn btn-primary" name="submit" value="ยืนยัน"> 
+              <input type="reset" class="btn btn-danger" name="reset" value="ยกเลิก"> 
               {{-- <button class="btn btn-sm btn-primary" type="submit">ส่ง</button>
               <button class="btn btn-sm btn-danger" type="reset"> ยกเลิก</button> --}}
             </div>
