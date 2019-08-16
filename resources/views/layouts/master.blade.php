@@ -38,7 +38,7 @@
       <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./home">
         <img class="navbar-brand-full" src="img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo">
         <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
       </a>
@@ -71,19 +71,19 @@
             <li class="nav-title">รายการ</li>
             <li class="nav-item">
               <a class="nav-link" href="{{ route('from.index') }}">
-                <i class="nav-icon icon-drop"></i>สร้างเอกสาร</a>
+                <i class="nav-icon icon-pencil"></i>สร้างเอกสาร</a>
             </li>
             <li class="nav-item nav-dropdown">
               <a class="nav-link nav-dropdown-toggle" href="#">
-                <i class="nav-icon icon-cursor"></i>กล่องเอกสาร</a>
+                <i class="nav-icon icon-list"></i>กล่องเอกสาร</a>
               <ul class="nav-dropdown-items">
                 <li class="nav-item">
                   <a class="nav-link" href="buttons/buttons.html">
-                    <i class="nav-icon icon-cursor"></i>เอกสารที่ได้รับ</a>
+                    <i class="nav-icon icon-note"></i>เอกสารรอดำเนินการ</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{ route('send.index') }}">
-                    <i class="nav-icon icon-cursor"></i>เอกสารที่ส่ง</a>
+                    <i class="nav-icon icon-note"></i>เอกสารที่เซ็นแล้ว </a>
                 </li>
               </ul>
             </li>
@@ -104,7 +104,6 @@
             </li>
           </ul>
         </nav>
-        <button class="sidebar-minimizer brand-minimizer" type="button"></button>
       </div>
       <main class="main">
         <!-- Breadcrumb-->
