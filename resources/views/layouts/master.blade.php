@@ -66,42 +66,21 @@
     </header>
     <div class="app-body">
       <div class="sidebar">
-        <nav class="sidebar-nav">
+        <nav>
+          <a class="btn btn-danger btn-block" href="./from">New Email</a>
           <ul class="nav">
-            <li class="nav-title">รายการ</li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('from.index') }}">
-                <i class="nav-icon icon-pencil"></i>สร้างเอกสาร</a>
-            </li>
-            <li class="nav-item nav-dropdown">
-              <a class="nav-link nav-dropdown-toggle" href="#">
-                <i class="nav-icon icon-list"></i>กล่องเอกสาร</a>
-              <ul class="nav-dropdown-items">
-                <li class="nav-item">
-                  <a class="nav-link" href="buttons/buttons.html">
-                    <i class="nav-icon icon-note"></i>เอกสารรอดำเนินการ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ route('send.index') }}">
-                    <i class="nav-icon icon-note"></i>เอกสารที่เซ็นแล้ว </a>
-                </li>
-              </ul>
+              <a class="nav-link" href="#">
+                <i class="fa fa-inbox"></i> Inbox
+                <span class="badge badge-danger">4</span>
+              </a>
             </li>
             
-            <li class="nav-divider"></li>
-            <li class="nav-title">Labels</li>
-            <li class="nav-item d-compact-none d-minimized-none">
-              <a class="nav-label" href="#">
-                <i class="fa fa-circle text-danger"></i> Label danger</a>
+            <li class="nav-item">
+              <a class="nav-link" href="apps/email/inbox.html">
+                <i class="fa fa-rocket"></i> Sent</a>
             </li>
-            <li class="nav-item d-compact-none d-minimized-none">
-              <a class="nav-label" href="#">
-                <i class="fa fa-circle text-info"></i> Label info</a>
-            </li>
-            <li class="nav-item d-compact-none d-minimized-none">
-              <a class="nav-label" href="#">
-                <i class="fa fa-circle text-warning"></i> Label warning</a>
-            </li>
+            
           </ul>
         </nav>
       </div>
