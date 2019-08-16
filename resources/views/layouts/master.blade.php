@@ -88,12 +88,12 @@
           <li class="breadcrumb-item" href="{{ url('/home') }}">Home</li>
         </ol>
         <div class="container-fluid">
-          <div class="animated fadeIn">
+          {{-- <div class="animated fadeIn">
             <div class="page-header">
               <div class="page-header-title">
                   <h2>สวัสดีครับ / ค่ะ</h2>
               </div>
-            </div>
+            </div> --}}
           
             @yield('content')
 
