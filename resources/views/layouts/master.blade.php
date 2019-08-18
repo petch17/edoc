@@ -28,7 +28,7 @@
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('vendors/pace-progress/css/pace.min.css')}}" rel="stylesheet">
     @yield('css')
-        
+
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar">
@@ -64,42 +64,37 @@
     <div class="app-body">
       <div class="sidebar">
         <nav>
-          <a class="btn btn-danger btn-block" href="{{ route('form.index') }}">New Email</a>
+          {{-- <a class="btn btn-danger btn-block" href="{{ route('form.index') }}">New Email</a> --}}
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('inbox.index') }}">
-                <i class="fa fa-inbox"></i> Inbox
+              <a class="nav-link" id="inbox" href="{{ route('inbox.index') }}">
+                <i class="nav-icon fa fa-inbox"></i> Inbox
                 <span class="badge badge-danger">4</span>
               </a>
             </li>
-            
+
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('sent.index') }}">
-                <i class="fa fa-rocket"></i> Sent</a> 
+              <a class="nav-link" id="sent" href="{{ route('sent.index') }}">
+                <i class="nav-icon fa fa-rocket"></i> Sent</a>
             </li>
-            
+
 
           </ul>
         </nav>
       </div>
-      <main class="main">
-        <!-- Breadcrumb-->
+
+      {{-- <main class="main">
         <ol class="breadcrumb">
           <li class="breadcrumb-item" href="{{ url('/home') }}">Home</li>
         </ol>
-        <div class="container-fluid">
-          {{-- <div class="animated fadeIn">
-            <div class="page-header">
-              <div class="page-header-title">
-                  <h2>สวัสดีครับ / ค่ะ</h2>
-              </div>
-            </div> --}}
-          
+        <div class="container-fluid"> --}}
+
             @yield('content')
 
-          </div>
+          {{-- </div>
         </div>
-      </main>
+      </main> --}}
+
     </div>
     <!-- <footer class="app-footer">
       <div>
