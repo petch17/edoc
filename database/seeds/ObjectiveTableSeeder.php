@@ -15,7 +15,7 @@ class ObjectiveTableSeeder extends Seeder
 
         $objective->insert([
             [
-                'desc'=> 'เพื่ออนุมัติ'
+                'desc'=> 'เพื่ออนุมัติ1'
             ],
             [
                 'desc'=> 'เพื่ออนุติในหลักการ'
