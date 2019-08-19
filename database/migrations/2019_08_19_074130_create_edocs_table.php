@@ -15,8 +15,8 @@ class CreateEdocsTable extends Migration
     {
         Schema::create('objective', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('desc');
-            
+            $table->string('name');
+
             $table->timestamps();
         });
 
@@ -25,7 +25,6 @@ class CreateEdocsTable extends Migration
             $table->string('number');
             $table->dateTime('date');
             $table->text('topic');
-            $table->string('retirement');
 
             // $table->string('part_id'); //เลขที่รับส่วนงาน
             $table->string('booknum');
@@ -41,7 +40,7 @@ class CreateEdocsTable extends Migration
 
             $table->bigIncrements('objective_id');
             $table->foreign('objective_id')->references('id')->on('objective')->onDelete('cascade');
-            
+
             $table->timestamps();
         });
     }
@@ -53,7 +52,7 @@ class CreateEdocsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('edocs');
         Schema::dropIfExists('objective');
+        Schema::dropIfExists('edocs');
     }
 }
