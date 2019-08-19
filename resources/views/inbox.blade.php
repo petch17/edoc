@@ -34,7 +34,7 @@
                     <a href="{{ route('form.index') }}" class="float-right">+ เพิ่มเอกสาร</a>
                 </div>
                 <div class="card-body">
-                        <i class="fa fa-circle" style="color:red;"></i> ด่วนมาก &nbsp;
+                        <i class="fa fa-circle" style="color:red;"></i> ด่วนที่สุด &nbsp;
                         <i class="fa fa-circle" style="color:orange"></i> ด่วนมาก &nbsp;
                         <i class="fa fa-circle" style="color:yellow"></i> ด่วน &nbsp;
                         <i class="fa fa-circle" style="color:green"></i> ปกติ &nbsp;
