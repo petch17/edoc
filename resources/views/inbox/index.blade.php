@@ -33,7 +33,7 @@
                     <i class="fa fa-circle" style="color:black"></i>ลับ --}}
 
                     {{-- <a href="{{ route('inbox.create') }}" class="float-right btn btn-primary">+ สร้างเอกสาร</a> --}}
-                    <a href="{{ route('add') }}" class="float-right">+ เพิ่มเอกสาร</a>
+                    <a href="{{ route('addcreate') }}" class="float-right">+ เพิ่มเอกสาร</a>
                 </div>
                 <div class="card-body">
                         <i class="fa fa-circle" style="color:red;"></i> ด่วนที่สุด &nbsp;

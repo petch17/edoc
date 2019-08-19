@@ -21,7 +21,7 @@
                             <strong>ตั้งแท่นเอกสาร</strong>
                         </div>
                         <div class="card-body">
-                            {!! Form::open(['route' => 'staff.store', 'method' => 'post', 'files'=>true]) !!}
+                            {!! Form::open(['route' => 'addstore', 'method' => 'post', 'files'=>true]) !!}
 
                                 <div class="form-group row">
                                     <label class="col-md-2 col-form-label" for="text-input">เลขที่หนังสือ</label>
