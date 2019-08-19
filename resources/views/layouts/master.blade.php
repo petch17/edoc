@@ -77,6 +77,11 @@
               <a class="nav-link" id="sent" href="{{ route('sent.index') }}">
                 <i class="nav-icon fa fa-rocket"></i> Sent5</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" id="form2" href="{{ route('form2.index') }}">
+                <i class="nav-icon fa fa-rocket"></i> form2</a>
+            </li>
           </ul>
         </nav>
       </div>
