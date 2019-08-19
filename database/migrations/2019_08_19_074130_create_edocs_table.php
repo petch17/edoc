@@ -14,14 +14,14 @@ class CreateEdocsTable extends Migration
     public function up()
     {
         Schema::create('objective', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('name');
 
             $table->timestamps();
         });
 
         Schema::create('edocs', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('number');
             $table->dateTime('date');
             $table->text('topic');
@@ -31,14 +31,13 @@ class CreateEdocsTable extends Migration
             $table->string('edoc_type');
             $table->dateTime('start'); //วันทีเริ่ม
             $table->dateTime('end'); //วันที่สิ้นสุด
-            $table->string('detail');
+            $table->text('detail');
             $table->string('file');
             $table->string('retirement');
             $table->string('position');
             $table->string('important');
             $table->string('status');
-
-            $table->bigIncrements('objective_id');
+            $table->integer('objective_id')->unsigned();
             $table->foreign('objective_id')->references('id')->on('objective')->onDelete('cascade');
 
             $table->timestamps();

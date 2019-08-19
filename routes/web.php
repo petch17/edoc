@@ -1,7 +1,7 @@
 <?php
 
 Route::get('inbox/add', 'InboxController@addcreate')->name('addcreate');
-// Route::get('inbox/add', 'InboxController@addstore')->name('addstore');
+Route::post('inbox/addstore', 'InboxController@addstore')->name('addstore');
 Route::resource('inbox','InboxController');
 
 

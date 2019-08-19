@@ -16,9 +16,15 @@ class InboxController extends Controller
         return view('inbox.create');
     }
 
-    public function add()
+    public function addcreate()
     {
         // return '1';
+        return view('inbox.add');
+    }
+
+    public function addstore()
+    {
+        return '1';
         return view('inbox.add');
     }
 }

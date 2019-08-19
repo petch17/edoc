@@ -21,7 +21,7 @@
                             <strong>ตั้งแท่นเอกสาร</strong>
                         </div>
                         <div class="card-body">
-                            {!! Form::open(['route' => 'addcreate', 'method' => 'post', 'files'=>true]) !!}
+                            {!! Form::open(['route' => 'addstore', 'method' => 'post', 'files'=>true]) !!}
 
                                 <div class="form-group row">
                                     <label class="col-md-2 col-form-label" for="text-input">เลขที่หนังสือ</label>
@@ -161,10 +161,10 @@
                                     </div>
                                 </div>
 
-                            </form>
+                            {{-- </form> --}}
                         </div>
                         <div class="card-footer" align="center">
-                            <input type="submit" class="btn btn-primary" name="submit" value="ยืนยัน">
+                            <button type="submit" class="btn btn-primary">ยืนยัน</button>
                             <a href="javascript:history.back(1)" class="btn btn-danger">ยกเลิก</a>
                             {{-- <button class="btn btn-sm btn-primary" type="submit">ส่ง</button>
             <button class="btn btn-sm btn-danger" type="reset"> ยกเลิก</button> --}}
