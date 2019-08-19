@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInboxTable extends Migration
+class CreateEdocsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -20,12 +20,24 @@ class CreateInboxTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('inbox', function (Blueprint $table) {
+        Schema::create('edocs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('number');
             $table->dateTime('date');
             $table->text('topic');
             $table->string('retirement');
+
+            // $table->string('part_id'); //เลขที่รับส่วนงาน
+            $table->string('booknum');
+            $table->string('edoc_type');
+            $table->dateTime('start'); //วันทีเริ่ม
+            $table->dateTime('end'); //วันที่สิ้นสุด
+            $table->string('detail');
+            $table->string('file');
+            $table->string('retirement');
+            $table->string('position');
+            $table->string('important');
+            $table->string('status');
 
             $table->bigIncrements('objective_id');
             $table->foreign('objective_id')->references('id')->on('objective')->onDelete('cascade');
@@ -41,7 +53,7 @@ class CreateInboxTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('inbox');
+        Schema::dropIfExists('edocs');
         Schema::dropIfExists('objective');
     }
 }

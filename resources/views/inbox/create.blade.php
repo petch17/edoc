@@ -246,6 +246,7 @@
 </main>
 @endsection
 @section('js')
+
 <script>
         $(document).ready(function () {
             document.getElementById('inbox').classList.add('active');

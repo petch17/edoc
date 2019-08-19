@@ -21,8 +21,8 @@
                             <strong>ตั้งแท่นเอกสาร</strong>
                         </div>
                         <div class="card-body">
-                            <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-                                
+                            {!! Form::open(['route' => 'staff.store', 'method' => 'post', 'files'=>true]) !!}
+
                                 <div class="form-group row">
                                     <label class="col-md-2 col-form-label" for="text-input">เลขที่หนังสือ</label>
                                     <div class="col-md-10">
@@ -31,7 +31,7 @@
                                         {{-- <span class="help-block">โปรดใส่ข้อมูล</span> --}}
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group row">
                                     <label class="col-md-2 col-form-label" for="date-input">วันที่</label>
                                     <div class="col-md-10">
@@ -169,6 +169,7 @@
                             {{-- <button class="btn btn-sm btn-primary" type="submit">ส่ง</button>
             <button class="btn btn-sm btn-danger" type="reset"> ยกเลิก</button> --}}
                         </div>
+                        {!! Form::close() !!}
                     </div>
                 </div>
             </div>
@@ -179,7 +180,7 @@
 @section('js')
 <script>
         $(document).ready(function () {
-            document.getElementById('form2').classList.add('active');
+            document.getElementById('inbox').classList.add('active');
         });
     </script>
 @endsection
