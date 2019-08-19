@@ -15,6 +15,15 @@ class CreateFormTable extends Migration
     {
         Schema::create('form', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('part_id');
+            $table->string('book_id');
+            $table->string('edoc_type');
+            $table->dateTime('start'); //วันทีเริ่ม
+            $table->dateTime('end'); //วันที่สิ้นสุด
+            $table->string('detail');
+            $table->string('Retirement');
+            $table->string('position');
+
             $table->timestamps();
         });
     }
