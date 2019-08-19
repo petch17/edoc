@@ -21,9 +21,11 @@ class CreateFormTable extends Migration
             $table->dateTime('start'); //วันทีเริ่ม
             $table->dateTime('end'); //วันที่สิ้นสุด
             $table->string('detail');
+            $table->string('upfile');
             $table->string('Retirement');
             $table->string('position');
-            
+            $table->string('status');
+
             $table->timestamps();
 
         });
