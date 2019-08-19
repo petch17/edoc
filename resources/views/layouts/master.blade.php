@@ -69,13 +69,13 @@
             <li class="nav-item">
               <a class="nav-link" id="inbox" href="{{ route('inbox.index') }}">
                 <i class="nav-icon fa fa-inbox"></i> Inbox
-                <span class="badge badge-danger">4</span>
+                <span class="badge badge-danger">5</span>
               </a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" id="sent" href="{{ route('sent.index') }}">
-                <i class="nav-icon fa fa-rocket"></i> Sent</a>
+                <i class="nav-icon fa fa-rocket"></i> Sent5</a>
             </li>
           </ul>
         </nav>
