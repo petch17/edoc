@@ -75,7 +75,7 @@
 
             <li class="nav-item">
               <a class="nav-link" id="sent" href="{{ route('sent.index') }}">
-                <i class="nav-icon fa fa-rocket"></i> Sent5</a>
+                <i class="nav-icon fa fa-rocket"></i> Sent</a>
             </li>
 
             <li class="nav-item">

@@ -31,7 +31,9 @@
                     <i class="fa fa-circle" style="color:yellow"></i>ด่วน &nbsp;
                     <i class="fa fa-circle" style="color:green"></i>ปกติ &nbsp;
                     <i class="fa fa-circle" style="color:black"></i>ลับ --}}
-                    <a href="{{ route('form.index') }}" class="float-right">+ เพิ่มเอกสาร</a>
+
+                    {{-- <a href="{{ route('inbox.create') }}" class="float-right btn btn-primary">+ สร้างเอกสาร</a> --}}
+                    <a href="{{ route('add') }}" class="float-right">+ เพิ่มเอกสาร</a>
                 </div>
                 <div class="card-body">
                         <i class="fa fa-circle" style="color:red;"></i> ด่วนที่สุด &nbsp;

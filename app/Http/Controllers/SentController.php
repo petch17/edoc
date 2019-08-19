@@ -8,6 +8,6 @@ class SentController extends Controller
 {
     public function index()
     {
-        return view('sent');
+        return view('sent.index');
     }
 }

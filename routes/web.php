@@ -1,5 +1,6 @@
 <?php
 
+Route::get('inbox/add', 'InboxController@add')->name('add');
 Route::resource('inbox','InboxController');
 Route::resource('form','FormController');
 Route::resource('sent','SentController');

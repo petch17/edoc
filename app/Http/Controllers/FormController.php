@@ -10,6 +10,6 @@ class FormController extends Controller
     {
         // return '1';
         
-        return view('form');
+        return view('form.index');
     }
 }
