@@ -23,7 +23,6 @@ class CreateFormTable extends Migration
             $table->string('detail');
             $table->string('Retirement');
             $table->string('position');
-            
             $table->timestamps();
 
         });
