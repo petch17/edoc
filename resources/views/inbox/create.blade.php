@@ -59,31 +59,31 @@
                                 <a1>
                                     <!-- แจ้งเพื่อทราบ -->
                                     <div class="แจ้งเพื่อทราบ box row" style="">
-                                        <div class="col-md-1 col-lg-2"> วันที่  </div>
+                                        <div class="col-md-1 col-lg-2"> วันที่ </div>
                                         <div class="col-md-10">
-                                            <input type="date" name="date1" id="date1" class="form-control" min="2019-08-19" value="2019-08-19"> 
+                                            <input type="date" name="date1" id="date1" class="form-control" min="2019-08-19" value="2019-08-19">
                                         </div>
                                     </div>
                                      <!-- แจ้งเพื่อดำเนินการ -->
                                     <div class="แจ้งเพื่อดำเนินการ box row" style="display: none;">
                                         <div class="col-md-1 col-lg-2"> วันที่ </div>
                                         <div class="col-md-10" id="local_time">
-                                            <input type="date" name="date2" id="date2" class="form-control" value="2019-08-19"> 
+                                            <input type="date" name="date2" id="date2" class="form-control" value="2019-08-19">
                                             <!--type="date" name="date"--></div>
                                             <div class="col-md-1 col-lg-2">กำหนดส่ง </div>
                                             <div class="col-md-10" id="local_time">
-                                                <input type="date" name="date3" id="date3" class="form-control" value="2019-08-19" required="required"> 
+                                                <input type="date" name="date3" id="date3" class="form-control" value="2019-08-19" required="required">
                                             </div>
                                     </div>
                                      <!-- แจ้งอบรม/ประชุม/สัมมนา -->
                                     <div class="แจ้งอบรม_ประชุม_สัมมนา box row" style="display: none;">
                                                 <div class="col-md-1 col-lg-2">เริ่มวันที่ </div>
                                                 <div class="col-md-10" id="local_time">
-                                                    <input type="date" name="startdate" id="startdate" class="form-control" min="2019-08-19" value="2019-08-19"> 
+                                                    <input type="date" name="startdate" id="startdate" class="form-control" min="2019-08-19" value="2019-08-19">
                                                 </div>
                                                 <div class="col-md-1 col-lg-1">เวลา </div>
                                                 <div class="col-md-10" id="local_time">
-                                                    <input type="time" name="starttime" id="starttime" class="form-control" value="11:30"> 
+                                                    <input type="time" name="starttime" id="starttime" class="form-control" value="11:30">
                                                 </div>
                                                 <div class="col-md-1 col-lg-1">น. </div>
                                     </div>
@@ -91,16 +91,16 @@
                                     <div class="แจ้งอบรม_ประชุม_สัมมนา box row" style="display: none;">
                                         <div class="col-md-1 col-lg-2">ถึงวันที่ </div>
                                         <div class="col-md-10" id="local_time">
-                                            <input type="date" name="enddate" id="enddate" class="form-control" min="2019-08-19" value="2019-08-19"> 
+                                            <input type="date" name="enddate" id="enddate" class="form-control" min="2019-08-19" value="2019-08-19">
                                         </div>
                                         <div class="col-md-1 col-lg-1">เวลา </div>
                                         <div class="col-md-10" id="local_time">
-                                            <input type="time" name="endtime" id="endtime" class="form-control" value="11:30"> 
+                                            <input type="time" name="endtime" id="endtime" class="form-control" value="11:30">
                                         </div>
                                         <div class="col-md-1 col-lg-1">น. </div>
                                     </div>
                                 </a1>
-                                
+
                                 {{-- <div class="form-group row">
                                     <label class="col-md-2 col-form-label" for="date-input">วันที่</label>
                                     <div class="col-md-10">
