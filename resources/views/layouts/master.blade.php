@@ -17,7 +17,7 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>Form</title>
+    <title>ระบบจัดการเอกสาร (E-DOC)</title>
     <!-- Icons-->
     <link rel="icon" type="image/ico" href="{{asset('img/favicon.ico')}}" sizes="any" />
     <link href="{{asset('node_modules/@coreui/icons/css/coreui-icons.min.css')}}" rel="stylesheet">

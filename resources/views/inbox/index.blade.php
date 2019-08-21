@@ -45,115 +45,28 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>ทะเบียน</th>
-                                <th>เอกสาร</th>
-                                <th>วันที่</th>
-                                <th>เวลา</th>
+                                <th>เลขที่หนังสือ</th>
                                 <th>เรื่อง</th>
-                                <th>Status</th>
+                                <th>วัตถุประสงค์</th>
+                                <th>เรียน</th>
+                                <th>วันที่</th>
+                                {{-- <th>Status</th> --}}
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($edocs as $index=>$item)
                             <tr>
-                                <td>1</td>
-                                <td>2885</td>
-                                <td>Anton Phunihel</td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
+                                <td>{{$index+1}}</td>
+                                <td>{{$item->booknum}}</td>
+                                <td>{{$item->topic}}</td>
+                                <td>{{$item->tbobjective->name}}</td>
+                                <td>{{$item->position}}</td>
+                                <td>{{DateTime::createFromFormat('Y-m-d H:i:s', $item->date)->format('d-m-Y') }}</td>
+                                {{-- <td>
                                     <span class="badge badge-success">Active</span>
-                                </td>
+                                </td> --}}
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2885</td>
-                                <td>Anton Phunihel</td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
-                                    <span class="badge badge-success">Active</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>2885</td>
-                                <td>Anton Phunihel</td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
-                                    <span class="badge badge-danger">Banned</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>453543</td>
-                                <td>Anton Phunihel</td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
-                                    <span class="badge badge-warning">Pending</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>4351</td>
-                                <td>Anton Phunihel</td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
-                                    <span class="badge badge-dark">Inactive</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>4353</td>
-                                <td>Anton Phunihel</td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
-                                    <span class="badge badge-dark">Inactive</span>
-                                </td>
-
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>2455</td>
-                                <td>Anton Phunihel</td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
-                                    <span class="badge badge-warning">Pending</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>4277</td>
-                                <td>Anton Phunihel</td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
-                                    <span class="badge badge-dark">Inactive</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>1818</td>
-                                <td>Anton </td>
-                                <td>2012/01/01</td>
-                                <td>time</td>
-                                <td>ลดโลกร้อน</td>
-                                <td>
-                                    <span class="badge badge-danger">Banned</span>
-                                </td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

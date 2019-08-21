@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Objective;
+use App\Edoc;
+use File;
 
 class InboxController extends Controller
 {
     public function index()
     {
-        return view('inbox.index');
+        $edocs = Edoc::with('tbobjective')->get();
+        return view('inbox.index',['edocs' => $edocs]);
     }
 
     public function create()
@@ -18,13 +22,31 @@ class InboxController extends Controller
 
     public function addcreate()
     {
-        // return '1';
-        return view('inbox.add');
+        $goals = Objective::select('id','name')->get();
+        return view('inbox.add',['goals' => $goals]);
     }
 
-    public function addstore()
+    public function addstore(Request $request)
     {
-        return '1';
-        return view('inbox.add');
+
+        $edoc = new Edoc;
+        $edoc->booknum = $request->booknum;
+        $edoc->date = $request->date;
+        $edoc->position = $request->position;
+        $edoc->objective_id = $request->objective_id;
+        $edoc->topic = $request->topic;
+
+        if ($request->hasFile('file')){
+            File::delete(base_path().'\\public\\edocfiles\\'.$edoc->file);
+            $file = str_random(10).'.'.$request->file('file')->getClientOriginalExtension();
+            // $file = $request->file('file')->getClientOriginalExtension();
+            // $file = $request->file('file')->getClientOriginalName();
+            $request->file('file')->move(base_path().'/public/edocfiles/',$file);
+            $edoc->file = $file;
+        }
+
+        $edoc->save();
+
+        return redirect()->route('inbox.index');
     }
 }
