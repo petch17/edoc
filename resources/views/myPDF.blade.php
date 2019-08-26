@@ -31,8 +31,15 @@
                     font-family: "THSarabunNew";
                 }
         </style>
+        {{-- <link href="https://fonts.googleapis.com/css?family=Sarabun&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+    </style> --}}
     </head>
     <body>
-        <p> test : {{ $name }} </p>
+        <p> test ทดสอบ => {{ $name }} </p>
     </body>
 </html>
