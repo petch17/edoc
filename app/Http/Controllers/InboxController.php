@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Objective;
 use App\Edoc;
 use File;
+use PDF;
 
 class InboxController extends Controller
 {
@@ -48,5 +49,17 @@ class InboxController extends Controller
         $edoc->save();
 
         return redirect()->route('inbox.index');
+    }
+
+    public function show($id)
+    {
+        // return $id;
+        $data = Edoc::find($id);
+
+        $data2 = ['booknum' => $data->booknum];
+        // return $data;
+        $pdf = PDF::loadView('myPDF', $data2);
+
+        return $pdf->stream('tset.pdf');
     }
 }

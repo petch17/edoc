@@ -50,7 +50,7 @@
                                 <th>วัตถุประสงค์</th>
                                 <th>เรียน</th>
                                 <th>วันที่</th>
-                                {{-- <th>Status</th> --}}
+                                <th><i class="fa fa-gear"></i></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -62,9 +62,7 @@
                                 <td>{{$item->tbobjective->name}}</td>
                                 <td>{{$item->position}}</td>
                                 <td>{{DateTime::createFromFormat('Y-m-d H:i:s', $item->date)->format('d-m-Y') }}</td>
-                                {{-- <td>
-                                    <span class="badge badge-success">Active</span>
-                                </td> --}}
+                            <td><a target="_blank" href="{{ route('inbox.show' , ['id' => $item->id]) }}"><i class="fa fa-search"></i></a></td>
                             </tr>
                             @endforeach
                         </tbody>
