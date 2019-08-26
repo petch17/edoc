@@ -65,6 +65,6 @@ class InboxController extends Controller
         // return $data;
         $pdf = PDF::loadView('myPDF', $data2);
 
-        return $pdf->stream('tset.pdf');
+        return @$pdf->stream();
     }
 }
