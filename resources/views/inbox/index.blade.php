@@ -19,18 +19,7 @@
         <div class="animated fadeIn">
             <div class="card">
                 <div class="card-header">
-                        <i class="fa fa-file"></i> เอกที่รอการอนุมัติ
-                    {{-- <form action="{{ route('form.index') }}">
-                    @csrf
-                    <button>
-                        <img src="{{ asset('img\signe.png') }}" width="15px" height="20px">
-                    </button>
-                    </form> --}}
-                    {{-- <i class="fa fa-circle" style="color:red;"></i>ด่วนมาก &nbsp;
-                    <i class="fa fa-circle" style="color:orange"></i>ด่วนมาก &nbsp;
-                    <i class="fa fa-circle" style="color:yellow"></i>ด่วน &nbsp;
-                    <i class="fa fa-circle" style="color:green"></i>ปกติ &nbsp;
-                    <i class="fa fa-circle" style="color:black"></i>ลับ --}}
+                    <i class="fa fa-file"></i> เอกที่รอการอนุมัติ
 
                     {{-- <a href="{{ route('addcreate') }}" class="float-right btn btn-primary">+ สร้างเอกสาร</a> --}}
                     <a href="{{ route('addcreate') }}" class="float-right">+ เพิ่มเอกสาร</a>
