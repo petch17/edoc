@@ -55,14 +55,13 @@ class InboxController extends Controller
     {
         // $data = Edoc::find($id);
         $data = Edoc::with('tbobjective')->find($id);
-
         $data2 = [  'booknum' => $data->booknum,
                     'date' => $data->date,
                     'topic' => $data->topic,
                     'position' => $data->position,
                     'name' => $data->tbobjective->name
                     ];
-        // return $data;
+                    
         $pdf = PDF::loadView('myPDF', $data2);
 
         return $pdf->stream();

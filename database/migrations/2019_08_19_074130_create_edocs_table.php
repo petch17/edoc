@@ -23,7 +23,7 @@ class CreateEdocsTable extends Migration
         Schema::create('edocs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('number')->nullable();
-            $table->dateTime('date')->nullable();
+            $table->date('date')->nullable();
             $table->text('topic')->nullable();
 
             // $table->string('part_id'); //เลขที่รับส่วนงาน
